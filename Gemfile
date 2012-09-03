@@ -1,11 +1,16 @@
 source 'https://rubygems.org'
+
 gem 'rails', '3.2.8'
+
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
 end
+
+
 gem 'jquery-rails'
+gem "gmaps4rails"
 gem "mongoid", ">= 3.0.5"
 gem "rspec-rails", ">= 2.11.0", :group => [:development, :test]
 gem "capybara", ">= 1.1.2", :group => :test
@@ -18,3 +23,4 @@ gem "devise", ">= 2.1.2"
 gem "cancan", ">= 1.6.8"
 gem "rolify", ">= 3.2.0"
 gem "simple_form", ">= 2.0.2"
+gem "country_select"

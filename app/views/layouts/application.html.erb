@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title><%= content_for?(:title) ? yield(:title) : "Dcneighborhood" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "DCNeighborhood" %></title>
     <meta name="description" content=""/>
     <meta name="author" content=""/>
     <%= stylesheet_link_tag    "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
+    <%= stylesheet_link_tag 'gmaps4rails' %>
+
     <%= csrf_meta_tags %>
     <%= yield(:head) %>
   </head>
@@ -33,5 +35,6 @@
         </div>
       </div> <!--! end of .container -->
     </div> <!--! end of #main -->
+    <%= yield :scripts %> 
   </body>
 </html>

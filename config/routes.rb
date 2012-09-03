@@ -1,4 +1,6 @@
 DCNeighborhood::Application.routes.draw do
+  resources :addresses
+
   authenticated :user do
     root :to => 'home#index'
   end

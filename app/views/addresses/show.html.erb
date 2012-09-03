@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Location:</b>
+  <%= @address.location %>
+</p>
+
+<p>
+  <b>Gmaps:</b>
+  <%= @address.gmaps %>
+</p>
+
+<p>
+  <b>Street:</b>
+  <%= @address.street %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @address.city %>
+</p>
+
+<p>
+  <b>Zipcode:</b>
+  <%= @address.zipcode %>
+</p>
+
+<p>
+  <b>Country:</b>
+  <%= @address.country %>
+</p>
+
+<%= gmaps4rails(@json) %>
+
+<%= link_to 'Edit', edit_address_path(@address) %> |
+<%= link_to 'Back', addresses_path %>

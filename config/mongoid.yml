@@ -69,7 +69,4 @@ test:
 production:
   sessions:
     default:
-      database: dc_neighborhood
-      options:
-        consistency: :strong
       uri: <%= ENV['MONGOHQ_URL'] %>
